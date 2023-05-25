@@ -1,1 +1,14 @@
-todo
+// This is a declarative pipeline example.
+
+pipeline {
+
+	agent any
+
+	stages {
+		stage ("build") {
+			steps {
+				echo 'Hello world'
+			}
+		}
+	}
+}
